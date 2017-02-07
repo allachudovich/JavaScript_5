@@ -1,0 +1,109 @@
+<!Doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript 9-10</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/jquery.selectbox.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/jquery.color.js"></script>
+	<script src="js/jquery.jcarousel.js"></script>
+	<script src="js/jquery.selectbox-0.6.1.js"></script>
+	<script src="js/jquery.checkbox.js"></script>
+	<script src="js/script.js"></script>
+
+</head>
+
+<body>
+	<nav>
+		<ul>
+			<li><a href="#">Flowers</a></li>
+			<li><a href="#">Deciduous</a></li>
+			<li class="dropdown">
+				<a href="#">Conifer</a>
+				<ul class="sub-menu">
+					<li><a href="#">Сypress</a></li>
+					<li><a href="#">Fir</a></li>
+					<li><a href="#">Cedar</a></li>
+					<li class="dropdown">
+						<a href="#">Pine</a>
+						<ul class="sub-menu">
+							<li><a href="#">Pinus strobus</a></li>
+							<li class="dropdown">
+								<a href="#">Pinus uncinata</a>
+								<ul class="sub-menu">
+									<li><a href="#">Pinus rostrata</a></li>
+									<li><a href="#">Pinus mugo Grune Welle</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="#">Silver fur</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Palm</a></li>
+		</ul>
+	</nav>
+	<div class="jcarousel-wrapper">
+		<div class="jcarousel">
+			<ul>
+				<li><img class="image" src="img/img1.jpg" alt=""></li>
+				<li><img class="image" src="img/img2.jpg" alt=""></li>
+				<li><img class="image" src="img/img3.jpg" alt=""></li>
+				<li><img class="image" src="img/img4.jpg" alt=""></li>
+			</ul>
+		</div>
+		<a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+		<a href="#" class="jcarousel-control-next">&rsaquo;</a>
+		<p class="jcarousel-pagination">
+		</p>
+
+	</div>
+
+	<div class="checkbox-block">
+		<div class="ch_jquery">
+			<p class="ch_title">Checkbox jQuery</p>
+			<span class="niceCheck"><input type="checkbox" id="jq-ch1">
+		<label for="jq-ch1">jq 1</label></span>
+			<span class="niceCheck"><input type="checkbox" id="jq-ch2">
+		<label for="jq-ch2">jq 2</label></span>
+			<span class="niceCheck"><input type="checkbox" id="jq-ch3">
+		<label for="jq-ch3">jq 3</label></span>
+			<span class="niceCheck"><input type="checkbox" id="jq-ch4">
+		<label for="jq-ch4">jq 4</label></span>
+			<span class="niceCheck"><input type="checkbox" id="jq-ch5">
+		<label for="jq-ch5">jq 5</label></span>
+		</div>
+		<div class="ch_css">
+			<p class="ch_title">Checkbox CSS</p>
+			<span class="niceCheck"><input type="checkbox" id="css-ch1">
+		<label for="css-ch1">css 1</label></span>
+			<span class="niceCheck"><input type="checkbox" id="css-ch2">
+		<label for="css-ch2">css 2</label></span>
+			<span class="niceCheck"><input type="checkbox" id="css-ch3">
+		<label for="css-ch3">css 3</label></span>
+			<span class="niceCheck"><input type="checkbox" id="css-ch4">
+		<label for="css-ch4">css 4</label></span>
+			<span class="niceCheck"><input type="checkbox" id="css-ch5">
+		<label for="css-ch5">css 5</label></span>
+		</div>
+	</div>
+
+	<div class="demoTarget">
+		<select id="default-usage-select">
+							<option value="--">Select your favorite flower</option>
+							<option value="01">Rose</option>
+							<option value="02">Aster</option>
+							<option value="03">Begonia</option>
+							<option value="04">Camellia</option>
+							<option value="05">Sakura</option>
+							<option value="06">Daisy</option>
+							<option value="07">Daffodil</option>
+						</select>
+	</div>
+
+
+</body>
+
+</html>

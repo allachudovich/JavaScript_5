@@ -1,0 +1,236 @@
+body {
+    background: #CDB79E;
+}
+
+nav {
+    background-color: #A0522D;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 70px;
+    display: inline-block;
+    position: relative;
+}
+
+nav li ul {
+    width: 200px;
+    background-color: #A0522D;
+    position: absolute;
+    left: 0;
+    top: 40px;
+}
+
+nav li li {
+    position: relative;
+    margin: 0;
+    display: block;
+}
+
+nav li li ul {
+    position: absolute;
+    top: 0;
+    left: 200px;
+    margin: 0;
+}
+
+nav a {
+    line-height: 40px;
+    padding: 0 12px;
+    margin: 0 12px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+nav a:hover, nav a:focus, nav a:active {
+    color: rgb(50, 50, 50);
+}
+
+nav li li a {
+    border-bottom: solid 1px #fff;
+    margin: 0 10px;
+    padding: 0;
+}
+
+nav li li:last-child a {
+    border-bottom: none;
+}
+
+ul.sub-menu {
+    display: none;
+}
+
+nav li.dropdown>a {
+    background-image: url('../img/arrow-down.png');
+    background-position: right 20px;
+    background-repeat: no-repeat;
+}
+
+nav li li.dropdown>a {
+    background-image: url('../img/arrow-right.png');
+    background-position: right 16px;
+    background-repeat: no-repeat;
+}
+
+.jcarousel-wrapper {
+    margin: 10px auto;
+    position: relative;
+    border: 7px solid #fff;
+    width: 500px;
+    height: 300px;
+    border-radius: 8px;
+}
+
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+}
+
+.jcarousel ul {
+    width: 320000px;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel li {
+    float: left;
+}
+
+.image {
+    width: 500px;
+    height: 300px;
+}
+
+.jcarousel-control-prev, .jcarousel-control-next {
+    position: absolute;
+    top: 150px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background: #4E443C;
+    color: #fff;
+    text-decoration: none;
+    font: 24px/27px Arial, sans-serif;
+}
+
+.jcarousel-control-prev {
+    left: -50px;
+}
+
+.jcarousel-control-next {
+    right: -50px;
+}
+
+.jcarousel-control-prev:hover span, .jcarousel-control-next:hover span {
+    display: block;
+}
+
+.jcarousel-control-prev.inactive, .jcarousel-control-next.inactive {
+    opacity: .5;
+    cursor: default;
+}
+
+.jcarousel-pagination {
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+}
+
+.jcarousel-pagination a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 11px;
+    line-height: 14px;
+    min-width: 14px;
+    background: #fff;
+    color: #4E443C;
+    border-radius: 14px;
+    padding: 3px;
+    text-align: center;
+    margin-right: 2px;
+    opacity: .75;
+}
+
+.jcarousel-pagination a.active {
+    background: #4E443C;
+    color: #fff;
+    opacity: 1;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
+}
+
+.ch_jquery, .ch_css {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+.ch_title {
+    font-size: 20px;
+    font-family: Arial, Tahoma, sans-serif;
+    color: #000;
+    width: 300px;
+}
+
+.niceCheck {
+    width: 17px;
+    height: 17px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: inline-block;
+    cursor: pointer;
+    background: url("../img/checkbox-sprite.png");
+}
+
+.niceCheck input {
+    display: none;
+}
+
+.niceCheck label {
+    margin-left: -34px;
+}
+
+.ch_css>input[type=checkbox] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+
+.ch_css>label {
+    cursor: pointer;
+}
+
+.ch_css>label:after {
+    content: " ";
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background: url("../img/checkbox-sprite.png");
+    position: relative;
+    top: 3px;
+    margin-left: 15px;
+}
+
+.ch_css>input[type=checkbox]:checked+label:after {
+    background-position: 0 -17px;
+}
+
+.ch_css>label:hover:after {
+    background-position: 0 -34px;
+}
+
+.ch_css>input[type=checkbox]:checked+label:hover:after {
+    background-position: 0 -51px;
+}
